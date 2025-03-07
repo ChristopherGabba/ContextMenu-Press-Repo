@@ -14,10 +14,8 @@ export const ContextMenuSampleItem = (props: ContextMenuSampleItemProps) => {
       <ContextMenu.Trigger action="longPress">
         <TouchableOpacity
           onPress={onQuickPress}
-          onLongPress={() => {
-            // DO NOTHING
-            /**THIS IS A WORKAROUND TO AVOID ACCIDENTAL FIRING OF BUTTON */
-          }}
+          /**THIS IS A WORKAROUND TO AVOID ACCIDENTAL FIRING OF BUTTON */
+          // onLongPress={() => {}} // DO NOTHING
           activeOpacity={0.7}
         >
           {children}

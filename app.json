@@ -1,14 +1,13 @@
 {
-  "name": "ContextMenu_Press_repo",
-  "displayName": "ContextMenu_Press_repo",
+  "name": "ContextMenuPressReproduction",
+  "displayName": "ContextMenuPressReproduction",
   "expo": {
-    "name": "ContextMenu_Press_repo",
-    "slug": "ContextMenu_Press_repo",
-    "scheme": "modalreproapp",
+    "name": "ContextMenuPressReproduction",
+    "slug": "ContextMenuPressReproduction",
+    "scheme": "contextmenupressreproduction",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": false,
     "icon": "./assets/images/app-icon-all.png",
     "extra": {
       "eas": {
@@ -24,7 +23,7 @@
     ],
     "android": {
       "icon": "./assets/images/app-icon-android-legacy.png",
-      "package": "com.modalreproapp",
+      "package": "com.contextmenupressreproduction",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
         "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
@@ -33,7 +32,7 @@
     "ios": {
       "icon": "./assets/images/app-icon-ios.png",
       "supportsTablet": true,
-      "bundleIdentifier": "com.modalreproapp"
+      "bundleIdentifier": "com.contextmenupressreproduction"
     },
     "web": {
       "favicon": "./assets/images/app-icon-web-favicon.png",
@@ -63,6 +62,9 @@
           "defaultChannel": "default",
           "enableBackgroundRemoteNotifications": false
         }
+      ],
+      [
+        "expo-build-properties"
       ]
     ],
     "experiments": {

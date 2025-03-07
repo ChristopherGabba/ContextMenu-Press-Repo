@@ -9,7 +9,6 @@ import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navig
 import { ComponentProps } from "react"
 import { MainScreen } from "@/screens/MainScreen"
 import { FullScreenImageScreen } from "@/screens/FullScreenImageScreen"
-import { usePushNotifications } from "@/helpers/helpers/usePushNotifications"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator

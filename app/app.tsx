@@ -4,7 +4,6 @@ import { useEffect } from "react"
 import * as Linking from "expo-linking"
 import { LinkingOptions, PathConfigMap } from "@react-navigation/native"
 import * as Notifications from "expo-notifications"
-import { ConfirmationModalProvider } from "./screens/ConfirmationModal"
 export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
 
 const prefixes = [Linking.createURL("")]
@@ -88,9 +87,7 @@ function App(props: AppProps) {
   // otherwise, we're ready to render the app
   return (
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <ConfirmationModalProvider>
         <AppNavigator linking={linking} />
-      </ConfirmationModalProvider>
     </SafeAreaProvider>
   )
 }
